@@ -1,0 +1,3 @@
+# Ignoring problematic Mac generated files
+*.DS_Store
+*.zip
