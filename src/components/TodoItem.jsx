@@ -4,10 +4,10 @@ import tick from '../assets/tick.png'
 import delete_icon from '../assets/delete.png'
 
 
-const TodoItem = ({text, id, isComplete, deleteTodo}) => {
+const TodoItem = ({text, id, isComplete, deleteTodo, toggle}) => {
   return (
     <div className='flex items-center my-3 gap-2'>
-        <div className='flex flex-1 items-center cursor-pointer'>
+        <div onClick={()=>{toggle(id)}} className='flex flex-1 items-center cursor-pointer'>
             <img className='w-7' src={tick} alt="tick" />
             <p className='tex-slate-700 ml-4 text-[1rem]' >
                 {text}</p>
